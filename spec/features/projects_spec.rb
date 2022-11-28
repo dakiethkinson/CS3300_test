@@ -1,11 +1,33 @@
-require 'rails_helper'
+RSpec.feature "Visiting Projects Page", type: :feature do
+  scenario "The visitor should see projects" do
+    visit new_project_path
+    expect(page).to have_text("New project")
+  end
 
-RSpec.feature "Projects", type: :feature do
-  pending "add some scenarios (or delete) #{__FILE__}"
+  scenario "The visitor should see title block" do
+    visit new_project_path
+    expect(page).to have_text("Title")
+  end
+
+  scenario "The visitor should see description block" do
+    visit new_project_path
+    expect(page).to have_text("Description")
+  end
+
+  scenario "The visitor should see Back to projects link" do
+    visit new_project_path
+    expect(page).to have_link("Back to projects")
+  end
+
+  scenario "The visitor should see Create Project Button" do
+    visit new_project_path
+    expect(page).to have_button("Create Project")
+  end
+
 end
-require 'rails_helper'
 
 RSpec.feature "Projects", type: :feature do
+  
   context "Create new project" do
     before(:each) do
       visit new_project_path
@@ -52,10 +74,11 @@ RSpec.feature "Projects", type: :feature do
   context "Remove existing project" do
       let!(:project) { Project.create(title: "Test title", description: "Test content") }
       scenario "remove project" do
-        visit project_path(project)
-        click_button "Destroy this project"
+      visit project_path(project)
+      click_button "Destroy this project"
       expect(page).to have_content("Project was successfully destroyed")
-      expect(Project.count).to eq(0)      
+      expect(Project.count).to eq(0)
+      
     end
   end
 end
