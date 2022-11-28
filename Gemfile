@@ -85,3 +85,5 @@ group :production do
 end
 
 gem 'devise'
+
+gem 'bootstrap', '~> 5.0.2'

@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-28T21:27:12+00:00">2022-11-28T21:27:12+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-28T22:47:30+00:00">2022-11-28T22:47:30+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="red">
-  75.0%
+  42.11%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.29
+       <span class="red">
+         0.58
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>56</b> relevant lines,
-    <span class="green"><b>42</b> lines covered</span> and
-    <span class="red"><b>14</b> lines missed. </span>
+    <b>57</b> relevant lines,
+    <span class="green"><b>24</b> lines covered</span> and
+    <span class="red"><b>33</b> lines missed. </span>
     (<span class="red">
-  75.0%
+  42.11%
 </span>
 )
   </div>
@@ -105,12 +105,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#36eda5355119d96fd5a2701fe62f44d509fb214f" class="src_link" title="app/controllers/projects_controller.rb">app/controllers/projects_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">70</td>
-            <td class="cell--number">33</td>
-            <td class="cell--number">33</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.91</td>
+            <td class="red strong cell--number t-file__coverage">44.12 %</td>
+            <td class="cell--number">71</td>
+            <td class="cell--number">34</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">0.71</td>
             
           </tr>
         
@@ -202,15 +202,15 @@
   <h2>
     <span class="group_name">Controllers</span>
     (<span class="covered_percent">
-      <span class="green">
-  100.0%
+      <span class="red">
+  45.71%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.88
+       <span class="red">
+         0.71
        </span>
     </span> hits/line
     )
@@ -223,11 +223,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>34</b> relevant lines,
-    <span class="green"><b>34</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
-    (<span class="green">
-  100.0%
+    <b>35</b> relevant lines,
+    <span class="green"><b>16</b> lines covered</span> and
+    <span class="red"><b>19</b> lines missed. </span>
+    (<span class="red">
+  45.71%
 </span>
 )
   </div>
@@ -263,12 +263,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#36eda5355119d96fd5a2701fe62f44d509fb214f" class="src_link" title="app/controllers/projects_controller.rb">app/controllers/projects_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">70</td>
-            <td class="cell--number">33</td>
-            <td class="cell--number">33</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.91</td>
+            <td class="red strong cell--number t-file__coverage">44.12 %</td>
+            <td class="cell--number">71</td>
+            <td class="cell--number">34</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">0.71</td>
             
           </tr>
         
@@ -942,8 +942,8 @@
   <div class="header">
     <h3>app/controllers/projects_controller.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="red">
+  44.12%
 </span>
 
       lines covered
@@ -952,9 +952,9 @@
     
 
     <div class="t-line-summary">
-      <b>33</b> relevant lines.
-      <span class="green"><b>33</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>34</b> relevant lines.
+      <span class="green"><b>15</b> lines covered</span> and
+      <span class="red"><b>19</b> lines missed.</span>
     </div>
 
     
@@ -987,13 +987,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="3">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  before_action :authenticate_user!, :except =&gt; [:index, :show] </code>
           </li>
         </div>
       
@@ -1004,12 +1004,23 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
             <code class="ruby">  # GET /projects or /projects.json</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
+          <li class="covered" data-hits="1" data-linenumber="6">
             <span class="hits">1</span>
             
 
@@ -1020,24 +1031,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="6">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="6" data-linenumber="7">
+            <span class="hits">6</span>
             
 
             
 
             <code class="ruby">    @projects = Project.all</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="7">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1048,7 +1048,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1059,12 +1059,23 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
             <code class="ruby">  # GET /projects/1 or /projects/1.json</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="10">
+          <li class="covered" data-hits="1" data-linenumber="11">
             <span class="hits">1</span>
             
 
@@ -1075,24 +1086,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
           <li class="never" data-hits="" data-linenumber="12">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1103,12 +1103,23 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
             <code class="ruby">  # GET /projects/new</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="14">
+          <li class="covered" data-hits="1" data-linenumber="15">
             <span class="hits">1</span>
             
 
@@ -1119,24 +1130,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="15">
-            <span class="hits">7</span>
+          <li class="missed" data-hits="0" data-linenumber="16">
+            
             
 
             
 
             <code class="ruby">    @project = Project.new</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="16">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1147,7 +1147,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1158,12 +1158,23 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
             <code class="ruby">  # GET /projects/1/edit</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="19">
+          <li class="covered" data-hits="1" data-linenumber="20">
             <span class="hits">1</span>
             
 
@@ -1174,24 +1185,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
           <li class="never" data-hits="" data-linenumber="21">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1202,12 +1202,23 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
+            
+            
+
+            
+
             <code class="ruby">  # POST /projects or /projects.json</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="23">
+          <li class="covered" data-hits="1" data-linenumber="24">
             <span class="hits">1</span>
             
 
@@ -1218,8 +1229,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="24">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="25">
+            
             
 
             
@@ -1229,7 +1240,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="25">
+          <li class="never" data-hits="" data-linenumber="26">
             
             
 
@@ -1240,8 +1251,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="26">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="27">
+            
             
 
             
@@ -1251,8 +1262,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="27">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="28">
+            
             
 
             
@@ -1262,8 +1273,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="28">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="29">
+            
             
 
             
@@ -1273,8 +1284,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="29">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="30">
+            
             
 
             
@@ -1284,7 +1295,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="30">
+          <li class="never" data-hits="" data-linenumber="31">
             
             
 
@@ -1295,8 +1306,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="31">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="32">
+            
             
 
             
@@ -1306,24 +1317,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="32">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="33">
+            
             
 
             
 
             <code class="ruby">        format.json { render json: @project.errors, status: :unprocessable_entity }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="33">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -1334,7 +1334,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -1345,7 +1345,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -1356,7 +1356,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1367,12 +1367,23 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
             <code class="ruby">  # PATCH/PUT /projects/1 or /projects/1.json</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="38">
+          <li class="covered" data-hits="1" data-linenumber="39">
             <span class="hits">1</span>
             
 
@@ -1383,8 +1394,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="39">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="40">
+            
             
 
             
@@ -1394,8 +1405,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="40">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="41">
+            
             
 
             
@@ -1405,8 +1416,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="41">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="42">
+            
             
 
             
@@ -1416,8 +1427,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="42">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="43">
+            
             
 
             
@@ -1427,7 +1438,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="43">
+          <li class="never" data-hits="" data-linenumber="44">
             
             
 
@@ -1438,8 +1449,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="44">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="45">
+            
             
 
             
@@ -1449,24 +1460,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="45">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="46">
+            
             
 
             
 
             <code class="ruby">        format.json { render json: @project.errors, status: :unprocessable_entity }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="46">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -1477,7 +1477,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -1488,7 +1488,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -1499,7 +1499,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1510,18 +1510,18 @@
 
             
 
-            <code class="ruby">  # DELETE /projects/1 or /projects/1.json</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="51">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="51">
+            
             
 
             
 
-            <code class="ruby">  def destroy</code>
+            <code class="ruby">  # DELETE /projects/1 or /projects/1.json</code>
           </li>
         </div>
       
@@ -1532,12 +1532,23 @@
 
             
 
+            <code class="ruby">  def destroy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="53">
+            
+            
+
+            
+
             <code class="ruby">    @project.destroy</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="53">
+          <li class="never" data-hits="" data-linenumber="54">
             
             
 
@@ -1548,8 +1559,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="54">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="55">
+            
             
 
             
@@ -1559,8 +1570,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="55">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="56">
+            
             
 
             
@@ -1570,24 +1581,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="56">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="57">
+            
             
 
             
 
             <code class="ruby">      format.json { head :no_content }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="57">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -1598,7 +1598,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -1609,12 +1609,23 @@
 
             
 
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="60">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="60">
+          <li class="covered" data-hits="1" data-linenumber="61">
             <span class="hits">1</span>
             
 
@@ -1625,7 +1636,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="61">
+          <li class="never" data-hits="" data-linenumber="62">
             
             
 
@@ -1636,7 +1647,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="62">
+          <li class="covered" data-hits="1" data-linenumber="63">
             <span class="hits">1</span>
             
 
@@ -1647,24 +1658,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="63">
-            <span class="hits">9</span>
+          <li class="covered" data-hits="5" data-linenumber="64">
+            <span class="hits">5</span>
             
 
             
 
             <code class="ruby">      @project = Project.find(params[:id])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="64">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -1675,7 +1675,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -1686,12 +1686,23 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="67">
+            
+            
+
+            
+
             <code class="ruby">    # Only allow a list of trusted parameters through.</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="67">
+          <li class="covered" data-hits="1" data-linenumber="68">
             <span class="hits">1</span>
             
 
@@ -1702,8 +1713,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="68">
-            <span class="hits">4</span>
+          <li class="missed" data-hits="0" data-linenumber="69">
+            
             
 
             
@@ -1713,7 +1724,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="69">
+          <li class="never" data-hits="" data-linenumber="70">
             
             
 
@@ -1724,7 +1735,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="70">
+          <li class="never" data-hits="" data-linenumber="71">
             
             
 
