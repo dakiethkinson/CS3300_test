@@ -55,7 +55,9 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem "sqlite3", "~> 1.4" 
 
+  #Testing
   gem 'rspec-rails', '~> 6.0.0'
+  gem 'capybara'
 end
 
 group :development do
@@ -74,6 +76,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem 'simplecov', require: false
 end
 
 group :production do
