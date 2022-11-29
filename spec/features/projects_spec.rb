@@ -1,3 +1,4 @@
+
 RSpec.feature "Visiting Projects Page", type: :feature do
   scenario "The visitor should see projects" do
     visit new_project_path

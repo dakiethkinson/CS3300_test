@@ -28,3 +28,21 @@ RSpec.feature "Visiting the homepage", type: :feature do
   end
   
 end
+
+RSpec.feature "Loging in", type: :feature do
+  scenario "The visitor should sign in" do
+    user = create(:user)
+  end
+
+  context "Sign in user" do
+    before(:each) do
+      visit new_session_path
+      within(id = "new_user") do
+        fill_in "email", with: user.email
+        fill_in "password", with: user.password
+        click_button "Log In"
+        expect(page).to have_text "Signed in successfully."
+      end
+    end
+  end  
+end
