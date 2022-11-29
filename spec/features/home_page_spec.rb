@@ -9,8 +9,9 @@ RSpec.feature "Visiting the homepage", type: :feature do
 
   scenario "The visitor should see New Project link" do
     visit root_path
-    expect(page).to have_text("New project")
+    expect(page).to have_text("New Project")
   end
+
 
   scenario "The visitor should see Home Page Link link" do
     visit root_path

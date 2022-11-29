@@ -36,4 +36,5 @@
 /config/master.key
 
 # Ignore specified files
-/coverage
+/coverage/*
+

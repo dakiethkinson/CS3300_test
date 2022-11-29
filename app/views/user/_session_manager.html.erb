@@ -1,16 +1,11 @@
-<li class="nav-item">
-  <a class="nav-link active" aria-current="page" href="#">Home</a>
-</li>
-<% if current_user %>
-  
+<% if current_user %>  
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Dropdown link
   </a>
   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-    <li><a class="dropdown-item" href="#">New Project</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><a class="dropdown-item" href="/projects"> Home </a></li>
+    <li><a class="dropdown-item" href="projects/new" > New Project </a></li>    
     <li class="nav-item"><%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "dropdown-item" %></li>
   </ul>
   </li>
@@ -20,6 +15,9 @@
   </li>
   <li class="nav-item">
     <a class="nav-link" href="/users/sign_up">Sign Up</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/projects/new">New Project</a>
   </li>
 <% end %>
 

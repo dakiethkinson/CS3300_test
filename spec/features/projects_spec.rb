@@ -6,7 +6,7 @@ RSpec.feature "Visiting Projects Page", type: :feature do
 
   context "Sign in user" do
     before(:each) do
-      visit new_project_path
+      visit new_session_path
       within(id = "new_user") do
         fill_in "email", with: user.email
         fill_in "password", with: user.password
@@ -31,7 +31,7 @@ RSpec.feature "Visiting Projects Page", type: :feature do
 
       scenario "The visitor should see Back to projects link" do
         visit new_project_path
-        expect(page).to have_link("Back to projects")
+        expect(page).to have_link("Back")
       end
 
       scenario "The visitor should see Create Project Button" do
@@ -45,7 +45,7 @@ end
 RSpec.feature "Projects", type: :feature do
   context "Sign in user" do
     before(:each) do
-      visit new_project_path
+      visit new_session_path
       within(id = "new_user") do
         fill_in "email", with: user.email
         fill_in "password", with: user.password
@@ -100,7 +100,7 @@ RSpec.feature "Projects", type: :feature do
         let!(:project) { Project.create(title: "Test title", description: "Test content") }
         scenario "remove project" do
         visit project_path(project)
-        click_button "Destroy this project"
+        click_button "Delete"
         expect(page).to have_content("Project was successfully destroyed")
         expect(Project.count).to eq(0)
         
