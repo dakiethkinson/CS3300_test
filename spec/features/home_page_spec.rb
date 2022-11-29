@@ -1,4 +1,7 @@
+require 'simplecov'
+SimpleCov.start 'rails'
 require "rails_helper"
+
 
 
 RSpec.feature "Visiting the homepage", type: :feature do
@@ -30,20 +33,32 @@ RSpec.feature "Visiting the homepage", type: :feature do
   
 end
 
-RSpec.feature "Loging in", type: :feature do
-  scenario "The visitor should sign in" do
-    user = create(:user)
-  end
-
-  context "Sign in user" do
-    before(:each) do
-      visit new_session_path
-      within(id = "new_user") do
-        fill_in "email", with: user.email
-        fill_in "password", with: user.password
-        click_button "Log In"
-        expect(page).to have_text "Signed in successfully."
-      end
+RSpec.feature "Visiting the homepage", type: :feature do
+  context "Sign Out" do
+    scenario "The visitor should sign in" do
+      user = create(:user)
     end
-  end  
+    
+    context "Sign in user" do
+      before(:each) do
+        visit new_session_path
+        within(id = "new_user") do
+          fill_in "email", with: user.email
+          fill_in "password", with: user.password
+          click_button "Log In"
+          expect(page).to have_text "Signed in successfully."
+        end
+  
+        scenario "The visitor should see Sign Out" do
+          click_button "Sign Out"
+          expect(page).to have_text("Signed out successfully.")
+        end
+      end
+    end    
+  end 
 end
+
+
+
+
+

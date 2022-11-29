@@ -38,3 +38,5 @@
 # Ignore specified files
 /coverage/*
 
+echo coverage >> .gitignore
+

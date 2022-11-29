@@ -78,6 +78,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
   gem 'simplecov', require: false
+  gem 'simplecov-rcov'
 end
 
 group :production do

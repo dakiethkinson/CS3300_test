@@ -1,3 +1,7 @@
+require 'simplecov'
+SimpleCov.start 'rails'
+require "rails_helper"
+
 
 RSpec.feature "Visiting Projects Page", type: :feature do
   scenario "The visitor should sign in" do
