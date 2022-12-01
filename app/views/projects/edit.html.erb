@@ -1,10 +1,19 @@
-<h1>Editing project</h1>
+
+<center>
+<div id="session">
+<div class="card" id="project" style="width: 18rem; my-10" id="session">
+
+<center><h1>Editing project</h1></center>
 
 <%= render "form", project: @project %>
 
 <br>
 
-<div>
+<div id="button_group">
   <%= link_to "Show this project", @project %> |
   <%= link_to "Back to projects", projects_path %>
 </div>
+</div>
+</div>
+</center>
+

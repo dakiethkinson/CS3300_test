@@ -13,3 +13,94 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "bootstrap";
+
+#body {
+    height: 100vh;
+    background-image: url(background.jpg) ;
+    background-size: cover;
+    background-blend-mode:darken;
+    background-color: rgb(223, 223, 223);
+    padding: .25%;
+    padding-top: 5%;
+}
+
+#session {
+  position: relative;  
+  margin-top: 2%;
+  padding-top: 5%;
+  background-color: transparent;
+}
+
+#project {    
+    
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, .15);
+    color:#fff;
+    padding-top: .5%;
+    margin: .5%;   
+
+}
+
+#show {
+    text-align: center;
+    padding: 2%;
+    border-top: 15%;
+    margin: 5%;
+}
+
+
+
+#button_group {    
+    border: none;
+    margin-bottom: 5%;   
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+#index_H2 {
+    padding-bottom: 2%;
+    padding-top: 5%;
+    text-align: center;
+    color: #fff;
+}
+
+
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #ebebeb;
+}
+
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, .15);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
