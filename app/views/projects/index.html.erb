@@ -1,18 +1,21 @@
+<div id="index">
 
 <h2 id="index_H2">Projects</h2>
-<br>
-<br>
 
-<div class="container">
-  <div class="row"> 
-    
+
+<div class="container" >
+  <div class="row" > 
     <% @projects.each do |project| %>
-      <%= render project %> 
-         
-    <% end %>
-    
-          
+      <div class="card" id="project" style="width: 18rem; my-10" >
+        <div class="card-body">
+          <h5 class="card-title">Title: <%= project.title %></h5>
+          <h6 class="card-subtitle mb-2 ">Description</h6>
+          <p class="card-text" id="content" ><%= project.description %></p>       
+          <%= link_to 'Show', project %>
+        </div>
+      </div>         
+    <% end %>          
   </div>  
 </div>
-
+</div>
 

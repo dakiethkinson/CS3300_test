@@ -1,14 +1,13 @@
-<p style="color: green"><%= notice %></p>
-<center>
-<br>
-<br>
-<br>
-<br>
+
+
+<div id ="show">
 <%= render @project %>
 
+
 <div>
-  <a> <%= link_to "Edit", edit_project_path(@project) %></a> |
-  <%= link_to "Back", projects_path %> |
-  <%= button_to "Delete", @project, method: :delete %>
+  <a> <%= link_to "Edit  |", edit_project_path(@project) %> </a> 
+  <a> <%= link_to "Back", projects_path %> </a>
+  <%= button_to "Delete", @project, method: :delete  %>
 </div>
-</center>
+</div>
+

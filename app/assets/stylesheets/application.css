@@ -13,7 +13,9 @@
  *= require_tree .
  *= require_self
  */
-
+#navbar {
+  margin-bottom: 5%;
+}
 
 
 #body {
@@ -28,26 +30,37 @@
 
 #session {
   position: relative;  
-  margin-top: 2%;
-  padding-top: 5%;
+  margin: 2%;
+  padding: 5%;
   background-color: transparent;
 }
 
 #project {    
-    
-    backdrop-filter: blur(50px);
+  position: relative;
+    backdrop-filter: blur(35px);
     background-color: rgba(255, 255, 255, .15);
     color:#fff;
-    padding-top: .5%;
-    margin: .5%;   
+    max-width: 95%;
+    padding: 2%;
+    margin: 2%;   
 
+}
+
+#index {    
+  position: relative;
+  padding-left: 15%;
+  max-width: 95%;
+}
+
+#about {
+  color:#fff;
+  margin-top: 4%;
 }
 
 #show {
     text-align: center;
     padding: 2%;
-    border-top: 15%;
-    margin: 5%;
+    
 }
 
 
@@ -64,6 +77,8 @@
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+    border: none;
+    background: none;
   }
 
 
@@ -73,6 +88,13 @@
     padding-top: 5%;
     text-align: center;
     color: #fff;
+}
+
+#content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 500px;
 }
 
 
@@ -86,7 +108,7 @@
 .navbar-scrolled .nav-link,
 .navbar-scrolled .navbar-toggler-icon,
 .navbar-scrolled .navbar-brand {
-  color: #fff;
+  color: rgb(221, 220, 220);
 }
 
 /* Color of the navbar AFTER scroll */
@@ -96,7 +118,7 @@
 }
 
 .mask-custom {
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, .15);
 }
 
