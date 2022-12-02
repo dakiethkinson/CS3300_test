@@ -30,6 +30,11 @@ RSpec.feature "Visiting the homepage", type: :feature do
     visit root_path
     expect(page).to have_text("Sign Up")
   end
+
+  scenario "The visitor should About section" do
+    visit root_path
+    expect(page).to have_text("Daniel Atkinson Portfolio Project")
+  end
   
 end
 
@@ -52,6 +57,11 @@ RSpec.feature "Visiting the homepage", type: :feature do
         scenario "The visitor should see Sign Out" do
           click_button "Sign Out"
           expect(page).to have_text("Signed out successfully.")
+        end
+
+        scenario "The visitor should see user menu after login" do
+          visit root_path
+          expect(page).to have_text("Menu")
         end
       end
     end    

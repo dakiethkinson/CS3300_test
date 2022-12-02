@@ -13,6 +13,7 @@ RSpec.feature "Visiting Sign In", type: :feature do
         visit new_user_session_path
         expect(page).to have_text("Password")
     end
+    
 end
 
 RSpec.feature "Loging in", type: :feature do

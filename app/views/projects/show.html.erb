@@ -5,8 +5,8 @@
 
 
 <div>
-  <a> <%= link_to "Edit  |", edit_project_path(@project) %> </a> 
-  <a> <%= link_to "Back", projects_path %> </a>
+  <a id="a"> <%= link_to "Edit  |", edit_project_path(@project) %> </a> 
+  <a id="a"> <%= link_to "Back", projects_path %> </a>
   <%= button_to "Delete", @project, method: :delete  %>
 </div>
 </div>

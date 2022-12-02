@@ -12,15 +12,15 @@
   <% end %>
 
   <div>
-  <div class="input-group mb-3 my-5">
-  
-  <input type="text" class="form-control" placeholder="Title of Project" aria-label="Username" aria-describedby="basic-addon1" <%= form.text_field :title %>
-</div>  
-    
-<div class="form-floating">
-<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px" <%= form.text_area :description %></textarea>
-<label for="floatingTextarea2">Description</label>
+  <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Title of Project</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Title">
 </div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Project Description</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Project Description" rows="5" <%= form.text_area :description %></textarea>
+</div>
+
 
 <br>
   <div>

@@ -79,6 +79,12 @@
     cursor: pointer;
     border: none;
     background: none;
+    
+  }
+
+  a:hover{
+    color: #fff;
+    font-weight: bold;
   }
 
 
